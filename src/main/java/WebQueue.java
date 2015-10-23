@@ -18,7 +18,7 @@ public class WebQueue {
         try {
             while(true) {
                 socket = serverSocket.accept(); 
-//                poolThread.execute(new HTTPConnector(socket));
+                poolThread.execute(new TaskHTTP(socket));
             }
         } catch (Exception e) {
             e.printStackTrace();
