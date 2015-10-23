@@ -83,7 +83,7 @@ public class TaskHTTP implements Runnable {
                 i--;
             }
             if (!pointIsFound) {
-                url = url+"/index.html";
+                url = url+"index.html";
 
                 if (fileExists(url)) {
                     status = 200;

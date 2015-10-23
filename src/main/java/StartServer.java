@@ -21,7 +21,7 @@ public class StartServer {
         ThreadPool threadPool =
                 new ThreadPool(THREAD_POOL_SIZE, SIZE_BLOCKING_QUEUE);
 
-        WebQueue server = new WebQueue(PORT);
+        WebQueue server = new WebQueue(port);
         server.start(threadPool);
     }
 }
